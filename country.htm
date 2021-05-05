@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Corona-Tracker</title>
+</head>
+<body>
+    <nav>
+        <h4>Corona-Tracker App</h4>
+        <p>Api provided by <span><a href="https://www.covid19api.com">Covid19Api.com</a></span></p>
+        
+    </nav>
+    <div class="page-heading"><h4 class="countryname">Country Data</h4></div>
+    
+        <a href="./index.htm" class="link" target="_blank">--- Get Global Data ---</a>
+        <div class="search">
+          <input type="text" placeholder="Enter Country Name" id="myInput">
+          <button class="submit">Search</button></div>
+        <div class="container"> 
+        <div class="sub-container">
+          <div class="heading"><h4>New Cases</h4></div>
+          <hr>
+          <div class="info">
+            <h5>New Confirmed : <span id="newc">578</span></h5>
+            <h5>New Recovered : <span id="newr">3445</span></h5>
+            <h5>New Deaths : <span id="newd">3435</span></h5>
+            
+          </div>
+          
+        </div>
+        <div class="sub-container">
+           <div class="heading"><h4>Total Confirmed Cases</h4></div>
+           <hr>
+           <div class="info">
+            <h5>Total Confirmed :<span id="totalc">546346</span></h5>
+            <h5>Total Recovered :<span id="totalr">46363</span></h5>
+            <h5>Total Deaths :<span id="totald">46346</span></h5>
+           </div>
+        </div>
+    </div>
+    <script src="./js/country.js" defer></script>
+</body>
+</html>

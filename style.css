@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(252, 245, 245, 0.5); 
+
+    
+}
+hr {
+     background-color: #fff; 
+     height: 2px; 
+     border: 0;
+     }
+h4{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #fff;
+    
+}
+
+h5{
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+h5 span{
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+nav{
+    display: grid;
+    place-content: center;
+    background: rgba(240, 98, 253, 0.5);
+    padding: 10px;
+    color: #fff;
+}
+ .link{
+     display: grid;
+     place-items: center;
+    text-decoration: none;
+    color: #333;
+    text-align: left;
+}
+.link:hover{
+    color: rgb(4, 63, 255);
+}
+span a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: rgba(77, 95, 255, 0.767);
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(2, 140, 253, 0.5);
+    background-image: url('https://wallpaperaccess.com/full/2296217.jpg');
+    background-blend-mode: luminosity;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    width: 100%;
+    height: 90vh;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ff8ee3 ;
+    width: 100%;
+    height: 70px;
+}
+.search input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.search .submit{
+    width: 140px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sub-container{
+    width: 400px;
+    height: 300px;
+    border: 2px solid #fff;
+}
+.heading{
+    display: grid;
+    place-content: center;
+    width: 100%;
+}
+.page-heading{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    background-color: steelblue;
+}
+.info{
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    place-content: center;
+}
+
+
+
+
+
+
+@media (max-width:900px){
+    .container{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .sub-container{
+      max-width: 350px;
+    max-height: 250px;
+    }
+    .sub-container:last-child{
+        margin-top: 30px;
+    }
+    h5{
+        font-size: small;
+    }
+    .sub-container .info h5{
+        font-size: larger;
+    }
+    .search{
+        width: 100%;
+    }
+}
