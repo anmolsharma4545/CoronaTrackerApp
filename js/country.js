@@ -20,7 +20,7 @@ fetch(api)
     })
     .then(function (data){
         var inputValue = document.getElementById("myInput").value;
-        
+        // Filtering Data //
         const newData = data.Countries.filter(item =>{
             return item.Country == `${inputValue}`;
         })
