@@ -63,7 +63,7 @@ span a{
     align-items: center;
     background: rgba(2, 140, 253, 0.5);
     background-image: url('https://wallpaperaccess.com/full/2296217.jpg');
-    background-blend-mode: luminosity;
+    background-blend-mode: color;
     filter: blur(5%);
 background-position: center;
 background-repeat: no-repeat;
